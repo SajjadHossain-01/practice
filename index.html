@@ -5,29 +5,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css/style.css">
+    <style>
+        .fild {
+            border: 1px solid violet;
+
+
+        }
+
+        .bat {
+            width: 500px;
+            height: 500px;
+            transition: transform .2s ease-in;
+        }
+
+        .fild:hover .bat {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+
+        .fild:hover .ball {
+            transform: translate(600px);
+        }
+
+        .ball {
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            border-radius: 50px;
+            position: relative;
+            left: 650px;
+            transition: transform 1s ease-out .2s;
+        }
+    </style>
 </head>
 
-
 <body>
-    <h1>this is hovaer</h1>
-    <form action="">
-        <p>name <input type="text" name="nam" id=""></p>
-        <fieldset>
-            <legend>select your relagian</legend>
-            <p><label for="islam"><input type="radio" name="islam" id="relagian">islam</label></p>
-        </fieldset>
-        <fieldset>
-            <legend>select your relagian</legend>
-            <p><label for="islam"><input type="checkbox" name="islam" id="relagian">islam</label></p>
-        </fieldset>
-        <p>মন্তব লিখুন <br>
-            <textarea name="" id="" cols="30" rows="10"></textarea>
-        </p>
-        <button type="submit">ঢালুন</button>
-        <button type="reset">মুছুন</button>
-    </form>
+    <div>
+        <div class="fild">
+            <img class="bat" src="../SeekPng.com_cricket-bat-png_3847878.png" alt="">
+            <div class="ball"></div>
+        </div>
 
+
+    </div>
 </body>
 
 </html>
